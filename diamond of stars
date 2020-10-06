@@ -1,0 +1,30 @@
+n=int(input())
+i=1
+p=0
+l=n-2
+while i<=n:
+    if i<=(n+1)//2:
+        s=1
+        while s<=((n)//2)-i+1:
+            
+            print(" ", end = "")
+            s=s+1
+        
+        j=1
+        while j<=2*i-1:
+            print("*",end="")
+            j=j+1
+    else :
+        
+        s=1
+        while s<=1+p:
+            print(" ", end = "")
+            s=s+1
+        j=1
+        while j<=l:
+            print("*",end="")
+            j=j+1
+        p=p+1
+        l-=2
+    print()
+    i=i+1
